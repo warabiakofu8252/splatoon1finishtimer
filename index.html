@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="hero is-warning" lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>スプラトゥーン終了タイマー</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/3c/01/a4/3c01a489e7f4c073bb38a97de5035c19.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  </head>
+  <body>
+    <section>
+      <div class="hero-body">
+        <h1 class="title has-text-centered">スプラトゥーン終了タイマー</h1>
+        <div class="notification is-danger">
+          <p class="is-size-3 has-text-centered">
+            スプラトゥーンがオンラインサービス
+            <span class="is-size-2 has-text-warning">
+              終了
+            </span>
+            するまで
+          </p>
+          <p id="timer" class="is-size-3 has-text-centered"></p>
+          <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="hero-body">
+        <div class="notification is-danger">
+          <p class="is-size-3 has-text-centered">
+            スプラトゥーンがオンラインサービス
+            <span class="is-size-2 has-text-warning">
+              開始
+            </span>
+            してから
+          </p>
+          <p id="経過時間表示" class="is-size-3 has-text-centered"></p>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
